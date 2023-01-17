@@ -1,0 +1,121 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  height: auto;
+  min-height: 110vh;
+  width: auto;
+  background: url(../../assets/LandingBackground.jpg);
+  background-position: center;
+  background-repeat: repeat; 
+  background-size: cover; 
+  background-attachment: fixed; 
+  font-family: "Arial"; 
+  color: rgba(6, 6, 80);
+}
+.btn_back {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: #b31b1b;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 17px;
+  cursor: pointer;
+  padding: 3px 9px;
+  border-radius: .5rem;
+  margin-left: 20px;
+}
+
+.title {
+  color: rgba(6, 6, 80, 0.752);
+  margin: 0;
+}
+
+.form_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: .5rem;
+  background-color: #fff;
+  margin: 3em;
+}
+
+.property {
+  display: flex;
+  font-size: 1rem;
+  flex-direction: column;
+  padding: 1em 0 1em 0;
+  width: 19em;
+
+}
+.name_property {
+  font-weight: bold;
+  color: rgba(6, 6, 80, 0.752);
+  margin-bottom: .3em;
+}
+
+.field {
+  outline-color: #06065051;
+  text-indent: 10px;
+  border-radius: 5px;  
+  border: 1px solid #80808078;
+  height: 2.3rem;
+  color: rgba(6, 6, 80, 0.752);
+  background-color: #F4F9FC
+}
+.field::placeholder {
+  color: #06065051;
+}
+.field_error{
+  color: #eb1b1b;
+}
+.btn_container{
+  margin-top: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.submit_btn {
+  height: 2.5em;
+  justify-self: flex-start;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: rgba(6, 6, 80, 0.752);
+  width: 75%;
+}
+.reset_btn{
+  justify-self: flex-end;
+  height: 2.5em;
+  text-align: center;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  border: 1px solid #fff;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: #eb1b1b;
+  width: 20%;
+}
+button:focus {
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}

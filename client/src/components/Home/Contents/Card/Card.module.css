@@ -1,0 +1,74 @@
+.card_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  font-size: 13px;
+  height: 7.8em;
+  width: 11em;
+  border-radius: .3em;
+  margin: 1em 1.5em 3em 1.5em;
+  background-color: rgba(6, 6, 80, 0.837);
+  border: 1px solid rgb(0, 0, 0);
+  box-shadow: 0px 10px 15px rgba(0,0,0,0.6);
+  font-family: 'Concert One';
+  transition: 0.2s;
+}
+@media (hover: hover) {
+  .card_container:hover {
+    transform: scale(1.17);
+    /* border-radius: 0 3em 0 3em; */
+  }
+}
+@media (hover: none) {
+  .card_container:active {
+    transform: scale(1.17);
+  }
+}
+
+.card_container img {
+  height: 3.6em;
+  width: 5.5em;
+  position: absolute;
+  left: 5%;
+  top: -26%;
+  border: 1px solid black;
+}
+
+.name, .continent {
+  align-self: center;
+  text-align: center;
+  text-align-last: center;
+  margin-bottom: .75em;
+  padding: 0 .5em .2em .5em;
+  max-width: 12.5em;
+  line-height: 1.1;
+  color: rgb(255, 255, 255);
+  text-transform:uppercase;
+}
+.name {
+  margin: 0;
+}
+.card_container .continent {
+  line-height: 0.5;
+}
+
+/*small sm*/
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .card_container {
+    font-size: 15px;
+  }
+}
+/*medium md*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .card_container {
+    font-size: 18px;
+  }
+}
+ /*large l xl xxl*/
+@media screen and (min-width: 992px) {
+  .card_container {
+    font-size: 20px;
+  }
+}
