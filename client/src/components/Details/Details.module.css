@@ -110,13 +110,19 @@
 }
 
 .activity_card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(6, 6, 80, 0.837);
   border-radius: .5em;
   border:  1px solid  #fff;
   padding: 1.5em .5em .5em .5em;
   margin: .5em;
   position: relative;
-  width: 45%;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 

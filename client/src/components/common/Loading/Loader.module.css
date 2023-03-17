@@ -1,49 +1,24 @@
-.loading {
-  width: 60px;
-  height: 60px;
-  position: relative;
+.lds-dual-ring {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
 }
-
-.d1 ,
-.d2 {
-  border: 5px solid #64dfdf;
-  border-radius: 50px;
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 10px solid  rgba(6, 6, 80, 0.837);
+  border-color:  rgba(6, 6, 80, 0.837) transparent  rgba(6, 6, 80, 0.837) transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
 }
-
-.loading .d1 {
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  border-left-color: transparent;
-  border-right-color: transparent;
-  animation: load161 1s linear infinite;
-}
-
-.loading .d2 {
-  width: 40px;
-  height: 40px;
-  border-top-color: transparent;
-  border-bottom-color: transparent;
-  margin: 7.5px;
-  animation: load2812 2s linear infinite;
-}
-
-@keyframes load161 {
+@keyframes lds-dual-ring {
   0% {
-    transform: rotate(0);
+    transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
-  }
-}
-
-@keyframes load2812 {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(-360deg);
   }
 }

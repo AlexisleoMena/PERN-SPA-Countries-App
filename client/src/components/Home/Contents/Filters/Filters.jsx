@@ -26,6 +26,17 @@ const Filters = () => {
     })();
   }, []);
 
+  useEffect(() => {
+    const handleClick = (e) => {
+      !document.getElementById('filtersContainer')?.contains(e.target) 
+        && setOpenFilters(false);
+    }
+    window.addEventListener('click', handleClick);
+    return () => {
+      window.removeEventListener('click', handleClick);
+    };
+  }, [setOpenFilters]);
+
   function handleFilters(e, filterName) {
     window.scroll({ top: 0, behavior: "smooth" })
     if(filters[filterName] === e.target.value) return handleResetFilter(filterName)
@@ -53,7 +64,7 @@ const Filters = () => {
  
 
   return (
-    <div className={styles.container}>
+    <div id="filtersContainer" className={styles.container}>
       <div className={styles.filters__actives}>
         <div className={styles.btn__filter} onClick={(e) => { setOpenFilters(!openFilters) }} >
           <i className="fas fa-sliders-h"></i>

@@ -49,7 +49,6 @@ const Contents = () => {
 
   return (
     <main className={styles.container}>
-
         {
           loading
           ? <div className={styles.loader_container}> <Loader /></div>

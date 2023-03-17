@@ -8,10 +8,7 @@ const Pagination = ({ cardsPerPage, totalCards, selectPageNumber }) => {
   function handleNumberPage(totalPages, pageSelected) {
     selectPageNumber(pageSelected);
     createPagination(totalPages, pageSelected);
-    window.scroll({
-      top: 0,
-      behavior: "smooth"
-    });
+    window.scroll(0,0);
   }
 
   const createPagination = (totalPages, page = currentPage) => {
