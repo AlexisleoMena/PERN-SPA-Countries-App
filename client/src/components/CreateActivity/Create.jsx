@@ -82,7 +82,7 @@ const Create = () => {
                     if (!(value.toString()?.replace(/^\s+|\s+$/, "")).length) return "Please fill in this field."
                     if (value[0] === ' ') return "Please remove leading spaces."
                     if (value[value.length - 1] === ' ') return "Please remove trailing spaces."
-                    if (!(/^[a-zA-Z0-9\u00C0-\u017F" "]{2,20}$/.test(value))) return "Name must contain 2 to 20 alphanumeric characters";
+                    if (!(/^[a-zA-Z0-9\u00C0-\u017F" "]{2,60}$/.test(value))) return "Name must contain 2 to 20 alphanumeric characters";
                     return;
                   }}
                 />
