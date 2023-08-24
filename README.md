@@ -17,7 +17,7 @@ En el desarrollo Frontend de la aplicación, se emplearon tecnologías como Reac
 A continuación, te presento algunas capturas de pantalla que te dan una idea visual de las características más destacadas de la aplicación:
 
 **Landing Page:**
-![Página de Inicio](./captures/Landing-page.jpg)
+![Página de Inicio](./captures/Landing-Page.jpg)
 
 **Home:**
 ![Inicio](./captures/Home.jpg)
